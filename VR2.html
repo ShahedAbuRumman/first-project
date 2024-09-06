@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">      
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <title>Vacation Request</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm bg-success navbar-dark sticky-top">
+    <div class="container-fluid d-flex justify-content-between">
+      
+      <div class="d-flex" style="margin-left: 2rem; font-weight: 100;">
+        <a href="Home.html"  class="text-decoration-none me-3 ">
+          <span class="text-white">Home</span>
+        </a>
+        <a href="Profile.html" class="text-decoration-none me-3">
+          <span class="text-white">Profiles</span>
+        </a>
+        <span class="text-white me-3">Report</span>
+        <span class="text-white">Settings</span>
+      </div>
+  
+      
+      <div class="d-flex align-items-center" style="margin-right: 0.5rem;">
+
+        <i class="bi bi-bell-fill text-white me-3"></i>
+        
+        <i class="bi bi-person-circle text-white"></i>
+      </div>
+    </div>
+  </nav>
+  
+    
+     
+        <div class="d-flex bd-highlight  justify-content-between p-2" style="margin-bottom: -4rem; margin-top: -3rem; " >
+            <div class="d-flex flex-row  ">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 512" style="width: 12rem; height: 12rem;margin-left: 1rem;" class="p-2 bd-highlight"><path fill="#008000" d="M152.1 38.2c9.9 8.9 10.7 24 1.8 33.9l-72 80c-4.4 4.9-10.6 7.8-17.2 
+                    7.9s-12.9-2.4-17.6-7L7 113C-2.3 103.6-2.3 88.4 7 79s24.6-9.4 33.9 0l22.1 22.1 55.1-61.2c8.9-9.9 24-10.7 33.9-1.8zm0 160c9.9 8.9 10.7 
+                    24 1.8 33.9l-72 80c-4.4 4.9-10.6 7.8-17.2 7.9s-12.9-2.4-17.6-7L7 273c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l22.1 22.1 55.1-61.2c8.9-9.9
+                    24-10.7 33.9-1.8zM224 96c0-17.7 14.3-32 32-32l224 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-224 0c-17.7 0-32-14.3-32-32zm0 160c0-17.7 14.3-32
+                     32-32l224 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-224 0c-17.7 0-32-14.3-32-32zM160 416c0-17.7 14.3-32 32-32l288 0c17.7 0 32 14.3 32 32s-14.3
+                     32-32 32l-288 0c-17.7 0-32-14.3-32-32zM48 368a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+                <p class="navbar-brand bd-highlight " style="margin: 5rem 0 1rem -8rem; font-weight: bold;">Vacation Requests</p>
+            </div>
+           
+        
+        
+<form  class="d-flex" >
+    <input  class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="border-radius: 2rem; margin:4rem 1rem 4rem 10rem; ">
+
+</form>
+        </div>
+
+
+<hr>
+
+   <div class="d-flex flex-row" style="margin-bottom: -2rem;">
+    <div class="form-check" style="margin-left: 3rem;">
+        <input class="form-check-input" type="checkbox" value="" id="selectAllCheckbox">
+        <label class="form-check-label" for="flexCheckChecked" style="color: gray;">
+          Select All
+        </label>
+      </div>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style=" width: 2rem; height: 2rem; margin-left: 80rem"><path fill="#333333" d="M3.9 54.9C10.5 40.9 24.5 32 40 32l432 0c15.5 0 29.5 8.9 36.1 22.9s4.6 30.5-5.2 42.5L320 320.9 320 448c0 12.1-6.8 23.2-17.7 28.6s-23.8 4.3-33.5-3l-64-48c-8.1-6-12.8-15.5-12.8-25.6l0-79.1L9 97.3C-.7 85.4-2.8 68.8 3.9 54.9z"/></svg>
+    </div>
+    
+    <div class="options_box">
+
+          <div class="row" style="margin: 2rem;">
+            <div class="card col-sm m-4 p-2" style="border-radius: 0;">
+                <div class="card-body">
+                    <input class="checkboxes" type="checkbox" style="display: none;">
+                    <div class="d-flex flex-column align-items-center">
+                        <img class="rounded-circle p-2 bd-highlight" alt="employee" src="employee.png"/>
+                  <h5 class="card-title">Ahmad Attar</h5>
+                    </div>
+                   <div class="row"> 
+                    <div class="col">
+                  <p style="font-weight: 100; color:gray;">Submitted on:</p>
+                  <p style="color:gray;">1/3/2024</p>
+                  <p style="font-weight: 100; color:gray;">Duration:</p>
+                  <p style="color:gray;">2 Weeks (1/4/2023 - 14/4/2023)</p>
+                  <p style="font-weight: 100; color:gray;">Salary:</p>
+                  <p style="color:gray;">1000 AED</p>
+                    </div>
+                  <div class="d-flex flex-column col" style="margin-top: 8rem;">
+                  <button type="button" class="btn btn-light btn btn-outline-success" style="--bs-btn-padding-y: 0.25rem; --bs-btn-padding-x: 2rem; --bs-btn-font-size: 0.75rem; margin-bottom: 0.5rem;">Decline</button>
+                  <button type="button" class="btn btn-success" style="--bs-btn-padding-y: 0.25rem; --bs-btn-padding-x: 2rem; --bs-btn-font-size: 0.75rem;">Approve</button>
+                </div>
+            </div>
+                </div>
+              </div>
+              <div class="card col-sm m-4 p-2" style="border-radius: 0;">
+                <div class="card-body">
+                    <input class="checkboxes" type="checkbox" style="display: none;">
+                    <div class="d-flex flex-column align-items-center">
+                        <img class="rounded-circle p-2 bd-highlight" alt="employee" src="employee.png"/>
+                  <h5 class="card-title">Ahmad Attar</h5>
+                    </div>
+                    <div class="row"> 
+                        <div class="col">
+                      <p style="font-weight: 100; color:gray;">Submitted on:</p>
+                      <p style="color:gray;">1/3/2024</p>
+                      <p style="font-weight: 100; color:gray;">Duration:</p>
+                      <p style="color:gray;">2 Weeks (1/4/2023 - 14/4/2023)</p>
+                      <p style="font-weight: 100; color:gray;">Salary:</p>
+                      <p style="color:gray;">1000 AED</p>
+                        </div>
+                      <div class="d-flex flex-column col" style="margin-top: 8rem;">
+                      <button type="button" class="btn btn-light btn btn-outline-success" style="--bs-btn-padding-y: 0.25rem; --bs-btn-padding-x: 2rem; --bs-btn-font-size: 0.75rem; margin-bottom: 0.5rem;">Decline</button>
+                      <button type="button" class="btn btn-success" style="--bs-btn-padding-y: 0.25rem; --bs-btn-padding-x: 2rem; --bs-btn-font-size: 0.75rem;">Approve</button>
+                    </div>
+                </div>
+                    </div>
+                  </div>
+
+              <div class="card col-sm m-4 p-2 " style="border-radius: 0;">
+                <div class="card-body">
+                    <input class="checkboxes" type="checkbox" style="display: none;">
+                    <div class="d-flex flex-column align-items-center">
+                        <img class="rounded-circle p-2 bd-highlight" alt="employee" src="employee.png"/>
+                  <h5 class="card-title">Ahmad Attar</h5>
+                    </div>
+                    <div class="row"> 
+                        <div class="col">
+                      <p style="font-weight: 100; color:gray;">Submitted on:</p>
+                      <p style="color:gray;">1/3/2024</p>
+                      <p style="font-weight: 100; color:gray;">Duration:</p>
+                      <p style="color:gray;">2 Weeks (1/4/2023 - 14/4/2023)</p>
+                      <p style="font-weight: 100; color:gray;">Salary:</p>
+                      <p style="color:gray;">1000 AED</p>
+                        </div>
+                      <div class="d-flex flex-column col" style="margin-top: 8rem;">
+                      <button type="button" class="btn btn-light btn btn-outline-success" style="--bs-btn-padding-y: 0.25rem; --bs-btn-padding-x: 2rem; --bs-btn-font-size: 0.75rem; margin-bottom: 0.5rem;">Decline</button>
+                      <button type="button" class="btn btn-success" style="--bs-btn-padding-y: 0.25rem; --bs-btn-padding-x: 2rem; --bs-btn-font-size: 0.75rem;">Approve</button>
+                    </div>
+                </div>
+                    </div>
+                  </div>
+</div>
+              <div class="row" style="margin: 2rem;">
+            <div class="card col-sm m-4 p-2" style="border-radius: 0;">
+                <div class="card-body">
+                    <input class="checkboxes" type="checkbox" style="display: none;">
+                    <div class="d-flex flex-column align-items-center">
+                        <img class="rounded-circle p-2 bd-highlight" alt="employee" src="employee.png"/>
+                  <h5 class="card-title">Ahmad Attar</h5>
+                    </div>
+                    
+                    <div class="row"> 
+                        <div class="col">
+                      <p style="font-weight: 100; color:gray;">Submitted on:</p>
+                      <p style="color:gray;">1/3/2024</p>
+                      <p style="font-weight: 100; color:gray;">Duration:</p>
+                      <p style="color:gray;">2 Weeks (1/4/2023 - 14/4/2023)</p>
+                      <p style="font-weight: 100; color:gray;">Salary:</p>
+                      <p style="color:gray;">1000 AED</p>
+                        </div>
+                      <div class="d-flex flex-column col" style="margin-top: 8rem;">
+                      <button type="button" class="btn btn-light btn btn-outline-success" style="--bs-btn-padding-y: 0.25rem; --bs-btn-padding-x: 2rem; --bs-btn-font-size: 0.75rem; margin-bottom: 0.5rem;">Decline</button>
+                      <button type="button" class="btn btn-success" style="--bs-btn-padding-y: 0.25rem; --bs-btn-padding-x: 2rem; --bs-btn-font-size: 0.75rem;">Approve</button>
+                    </div>
+                </div>
+                    </div>
+                  </div>
+              <div class="card col-sm m-4 p-2" style="border-radius: 0;">
+                <div class="card-body">
+                    <input class="checkboxes" type="checkbox" style="display: none;">
+                    <div class="d-flex flex-column align-items-center">
+                        <img class="rounded-circle p-2 bd-highlight" alt="employee" src="employee.png"/>
+                  <h5 class="card-title">Ahmad Attar</h5>
+                    </div>
+                    <div class="row"> 
+                        <div class="col">
+                      <p style="font-weight: 100; color:gray;">Submitted on:</p>
+                      <p style="color:gray;">1/3/2024</p>
+                      <p style="font-weight: 100; color:gray;">Duration:</p>
+                      <p style="color:gray;">2 Weeks (1/4/2023 - 14/4/2023)</p>
+                      <p style="font-weight: 100; color:gray;">Salary:</p>
+                      <p style="color:gray;">1000 AED</p>
+                        </div>
+                      <div class="d-flex flex-column col" style="margin-top: 8rem;">
+                      <button type="button" class="btn btn-light btn btn-outline-success" style="--bs-btn-padding-y: 0.25rem; --bs-btn-padding-x: 2rem; --bs-btn-font-size: 0.75rem; margin-bottom: 0.5rem;">Decline</button>
+                      <button type="button" class="btn btn-success" style="--bs-btn-padding-y: 0.25rem; --bs-btn-padding-x: 2rem; --bs-btn-font-size: 0.75rem;">Approve</button>
+                    </div>
+                </div>
+                    </div>
+                  </div>
+              
+              <div class="card col-sm m-4 p-2 " style="border-radius: 0;">
+                <div class="card-body">
+                    <input class="checkboxes" type="checkbox" style="display: none;">
+                    <div class="d-flex flex-column align-items-center">
+                        <img class="rounded-circle p-2 bd-highlight" alt="employee" src="employee.png"/>
+                  <h5 class="card-title">Ahmad Attar</h5>
+                    </div>
+                    <div class="row"> 
+                        <div class="col">
+                      <p style="font-weight: 100; color:gray;">Submitted on:</p>
+                      <p style="color:gray;">1/3/2024</p>
+                      <p style="font-weight: 100; color:gray;">Duration:</p>
+                      <p style="color:gray;">2 Weeks (1/4/2023 - 14/4/2023)</p>
+                      <p style="font-weight: 100; color:gray;">Salary:</p>
+                      <p style="color:gray;">1000 AED</p>
+                        </div>
+                      <div class="d-flex flex-column col" style="margin-top: 8rem;">
+                      <button type="button" class="btn btn-light btn btn-outline-success" style="--bs-btn-padding-y: 0.25rem; --bs-btn-padding-x: 2rem; --bs-btn-font-size: 0.75rem; margin-bottom: 0.5rem;">Decline</button>
+                      <button type="button" class="btn btn-success" style="--bs-btn-padding-y: 0.25rem; --bs-btn-padding-x: 2rem; --bs-btn-font-size: 0.75rem;">Approve</button>
+                    </div>
+                </div>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="row" style="margin: 2rem;">
+                <div class="card col-sm m-4 p-2" style="border-radius: 0;">
+                    <div class="card-body">
+                        <input class="checkboxes" type="checkbox" style="display: none;">
+                        <div class="d-flex flex-column align-items-center">
+                            <img class="rounded-circle p-2 bd-highlight" alt="employee" src="employee.png"/>
+                      <h5 class="card-title">Ahmad Attar</h5>
+                        </div>
+                        
+                        <div class="row"> 
+                            <div class="col">
+                          <p style="font-weight: 100; color:gray;">Submitted on:</p>
+                          <p style="color:gray;">1/3/2024</p>
+                          <p style="font-weight: 100; color:gray;">Duration:</p>
+                          <p style="color:gray;">2 Weeks (1/4/2023 - 14/4/2023)</p>
+                          <p style="font-weight: 100; color:gray;">Salary:</p>
+                          <p style="color:gray;">1000 AED</p>
+                            </div>
+                          <div class="d-flex flex-column col" style="margin-top: 8rem;">
+                          <button type="button" class="btn btn-light btn btn-outline-success" style="--bs-btn-padding-y: 0.25rem; --bs-btn-padding-x: 2rem; --bs-btn-font-size: 0.75rem; margin-bottom: 0.5rem;">Decline</button>
+                          <button type="button" class="btn btn-success" style="--bs-btn-padding-y: 0.25rem; --bs-btn-padding-x: 2rem; --bs-btn-font-size: 0.75rem;">Approve</button>
+                        </div>
+                    </div>
+                        </div>
+                      </div>
+                  <div class="card col-sm m-4 p-2" style="border-radius: 0;">
+                    <div class="card-body">
+                        <input class="checkboxes" type="checkbox" style="display: none;">
+                        <div class="d-flex flex-column align-items-center">
+                            <img class="rounded-circle p-2 bd-highlight" alt="employee" src="employee.png"/>
+                      <h5 class="card-title">Ahmad Attar</h5>
+                        </div>
+                        <div class="row"> 
+                            <div class="col">
+                          <p style="font-weight: 100; color:gray;">Submitted on:</p>
+                          <p style="color:gray;">1/3/2024</p>
+                          <p style="font-weight: 100; color:gray;">Duration:</p>
+                          <p style="color:gray;">2 Weeks (1/4/2023 - 14/4/2023)</p>
+                          <p style="font-weight: 100; color:gray;">Salary:</p>
+                          <p style="color:gray;">1000 AED</p>
+                            </div>
+                          <div class="d-flex flex-column col" style="margin-top: 8rem;">
+                          <button type="button" class="btn btn-light btn btn-outline-success" style="--bs-btn-padding-y: 0.25rem; --bs-btn-padding-x: 2rem; --bs-btn-font-size: 0.75rem; margin-bottom: 0.5rem;">Decline</button>
+                          <button type="button" class="btn btn-success" style="--bs-btn-padding-y: 0.25rem; --bs-btn-padding-x: 2rem; --bs-btn-font-size: 0.75rem;">Approve</button>
+                        </div>
+                    </div>
+                        </div>
+                      </div>
+                  
+                  <div class="card col-sm m-4 p-2 " style="border-radius: 0;">
+                    <div class="card-body">
+                        <input class="checkboxes" type="checkbox" style="display: none;">
+                        <div class="d-flex flex-column align-items-center">
+                            <img class="rounded-circle p-2 bd-highlight" alt="employee" src="employee.png"/>
+                      <h5 class="card-title">Ahmad Attar</h5>
+                        </div>
+                        <div class="row"> 
+                            <div class="col">
+                          <p style="font-weight: 100; color:gray;">Submitted on:</p>
+                          <p style="color:gray;">1/3/2024</p>
+                          <p style="font-weight: 100; color:gray;">Duration:</p>
+                          <p style="color:gray;">2 Weeks (1/4/2023 - 14/4/2023)</p>
+                          <p style="font-weight: 100; color:gray;">Salary:</p>
+                          <p style="color:gray;">1000 AED</p>
+                            </div>
+                          <div class="d-flex flex-column col" style="margin-top: 8rem;">
+                          <button type="button" class="btn btn-light btn btn-outline-success" style="--bs-btn-padding-y: 0.25rem; --bs-btn-padding-x: 2rem; --bs-btn-font-size: 0.75rem; margin-bottom: 0.5rem;">Decline</button>
+                          <button type="button" class="btn btn-success" style="--bs-btn-padding-y: 0.25rem; --bs-btn-padding-x: 2rem; --bs-btn-font-size: 0.75rem;">Approve</button>
+                        </div>
+                    </div>
+                        </div>
+                      </div>
+                      </div>
+
+                  <div class="row" style="margin: 2rem;">
+                    <div class="card col-sm m-4 p-2" style="border-radius: 0;">
+                        <div class="card-body">
+                            <input class="checkboxes" type="checkbox" style="display: none;">
+                            <div class="d-flex flex-column align-items-center">
+                                <img class="rounded-circle p-2 bd-highlight" alt="employee" src="employee.png"/>
+                          <h5 class="card-title">Ahmad Attar</h5>
+                            </div>
+                            
+                            <div class="row"> 
+                                <div class="col">
+                              <p style="font-weight: 100; color:gray;">Submitted on:</p>
+                              <p style="color:gray;">1/3/2024</p>
+                              <p style="font-weight: 100; color:gray;">Duration:</p>
+                              <p style="color:gray;">2 Weeks (1/4/2023 - 14/4/2023)</p>
+                              <p style="font-weight: 100; color:gray;">Salary:</p>
+                              <p style="color:gray;">1000 AED</p>
+                                </div>
+                              <div class="d-flex flex-column col" style="margin-top: 8rem;">
+                              <button type="button" class="btn btn-light btn btn-outline-success" style="--bs-btn-padding-y: 0.25rem; --bs-btn-padding-x: 2rem; --bs-btn-font-size: 0.75rem; margin-bottom: 0.5rem;">Decline</button>
+                              <button type="button" class="btn btn-success" style="--bs-btn-padding-y: 0.25rem; --bs-btn-padding-x: 2rem; --bs-btn-font-size: 0.75rem;">Approve</button>
+                            </div>
+                        </div>
+                            </div>
+                          </div>
+                      <div class="card col-sm m-4 p-2" style="border-radius: 0;">
+                        <div class="card-body">
+                            <input class="checkboxes" type="checkbox" style="display: none;">
+                            <div class="d-flex flex-column align-items-center">
+                                <img class="rounded-circle p-2 bd-highlight" alt="employee" src="employee.png"/>
+                          <h5 class="card-title">Ahmad Attar</h5>
+                            </div>
+                            <div class="row"> 
+                                <div class="col">
+                              <p style="font-weight: 100; color:gray;">Submitted on:</p>
+                              <p style="color:gray;">1/3/2024</p>
+                              <p style="font-weight: 100; color:gray;">Duration:</p>
+                              <p style="color:gray;">2 Weeks (1/4/2023 - 14/4/2023)</p>
+                              <p style="font-weight: 100; color:gray;">Salary:</p>
+                              <p style="color:gray;">1000 AED</p>
+                                </div>
+                              <div class="d-flex flex-column col" style="margin-top: 8rem;">
+                              <button type="button" class="btn btn-light btn btn-outline-success" style="--bs-btn-padding-y: 0.25rem; --bs-btn-padding-x: 2rem; --bs-btn-font-size: 0.75rem; margin-bottom: 0.5rem;">Decline</button>
+                              <button type="button" class="btn btn-success" style="--bs-btn-padding-y: 0.25rem; --bs-btn-padding-x: 2rem; --bs-btn-font-size: 0.75rem;">Approve</button>
+                            </div>
+                        </div>
+                            </div>
+                          </div>
+                      
+                      <div class="card col-sm m-4 p-2 " style="border-radius: 0;">
+                        <div class="card-body">
+                            <input class="checkboxes" type="checkbox" style="display: none;">
+                            <div class="d-flex flex-column align-items-center">
+                                <img class="rounded-circle p-2 bd-highlight" alt="employee" src="employee.png"/>
+                          <h5 class="card-title">Ahmad Attar</h5>
+                            </div>
+                            <div class="row"> 
+                                <div class="col">
+                              <p style="font-weight: 100; color:gray;">Submitted on:</p>
+                              <p style="color:gray;">1/3/2024</p>
+                              <p style="font-weight: 100; color:gray;">Duration:</p>
+                              <p style="color:gray;">2 Weeks (1/4/2023 - 14/4/2023)</p>
+                              <p style="font-weight: 100; color:gray;">Salary:</p>
+                              <p style="color:gray;">1000 AED</p>
+                                </div>
+                              <div class="d-flex flex-column col" style="margin-top: 8rem;">
+                              <button type="button" class="btn btn-light btn btn-outline-success" style="--bs-btn-padding-y: 0.25rem; --bs-btn-padding-x: 2rem; --bs-btn-font-size: 0.75rem; margin-bottom: 0.5rem;">Decline</button>
+                              <button type="button" class="btn btn-success" style="--bs-btn-padding-y: 0.25rem; --bs-btn-padding-x: 2rem; --bs-btn-font-size: 0.75rem;">Approve</button>
+                            </div>
+                        </div>
+                            </div>
+                          </div>
+                          </div> 
+
+
+    </div>                     <nav aria-label="Page navigation example" class="pagination-wrapper">
+                        <ul class="pagination justify-content-center">
+                          <li class="page-item">
+                            <a class="page-link" href="Vacation Request.html" aria-label="Previous">
+                              <span aria-hidden="true">&laquo;</span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="Vacation Request.html">1</a></li>
+                          <li class="page-item"><a class="page-link" href="VR2.html">2</a></li>
+                          <li class="page-item"><a class="page-link" href="VR3.html">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="VR3.html" aria-label="Next">
+                              <span aria-hidden="true">&raquo;</span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                      
+                      
+
+      
+      <script src="Js.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" 
+integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script> 
+</body>
+</html>
